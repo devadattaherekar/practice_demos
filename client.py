@@ -1,66 +1,50 @@
 """
 Product Management System to manage products in the inventory
 """
-products=[]
-ref = iter(range(1, 101))
+import data
 
-def create_product():
+def user_create_product():
     """
     Create product to add product with name and price
     :return: None
     """
-    product_id=next(ref)
     product_name=input("Enter product name ")
     product_price=float(input("Enter price of product"))
-    products.append({"id":product_id,"name":product_name,"price":product_price})
+    data.create_product(product_name,product_price)
 
-def delete_product():
+
+def user_delete_product():
     """
     Delete product based on product id
     :return: None
     """
     product_id = float(input("Enter product id"))
-    for each_product in products:
-        if each_product["id"]==product_id:
-            print(f"{each_product['name']} with product_id {each_product['id']}\
-             removed from inventory!")
-            products.remove(each_product)
+    data.delete_product(product_id)
 
-def update_product():
+def user_update_product():
     """
     Update product price based on product id
     :return: None
     """
     product_id = float(input("Enter product id"))
     product_price = float(input("Enter price to update"))
-    for each_product in products:
-        if each_product["id"] == product_id:
-            each_product["price"]=product_price
+    data.update_product(product_id, product_price)
 
 
-def select_product():
+def user_select_product():
     """
     To check whether product exists in inventory based on product id
     :return: None
     """
     product_id = float(input("Enter product id"))
-    if any(products):
-        for each_record in products:
-            if product_id== each_record["id"]:
-                print(each_record["id"], each_record["name"], each_record["price"])
-    else:
-        print("Inventory is empty!")
+    data.select_product(product_id)
 
-def display_products():
+def user_display_products():
     """
     Display all products from inventory
     :return: None
     """
-    if any(products):
-        for each_record in products:
-            print(each_record["id"],each_record["name"],each_record["price"])
-    else:
-        print("Inventory is empty!")
+    data.display_products()
 
 
 SELECT_CHOICE="""
@@ -82,15 +66,16 @@ def menu():
     choice = int(input(SELECT_CHOICE))
     while choice!=6:
         if choice==1:
-            create_product()
+            user_create_product()
         elif choice==2:
-            delete_product()
+            user_delete_product()
         elif choice==3:
-            update_product()
+            user_update_product()
         elif choice==4:
-            select_product()
+            user_select_product()
         elif choice==5:
-            display_products()
+            user_display_products()
         choice = int(input(SELECT_CHOICE))
 
 menu()
+

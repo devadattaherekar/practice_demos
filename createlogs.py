@@ -8,7 +8,6 @@ logging.error("This is error log")
 logging.critical("This is critical log")
 """
 
-
 logging.basicConfig(filename="mylogs.txt",
                     level=logging.DEBUG,
                     format="%(asctime)s %(filename)s %(funcName)s %(lineno)d %(message)s",
