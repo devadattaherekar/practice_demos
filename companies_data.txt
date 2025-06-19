@@ -1,0 +1,4 @@
+wipro,5
+infosys,7
+tcs,3
+tata technologies,17
