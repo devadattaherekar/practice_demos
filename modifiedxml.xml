@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<myinfo>
+		<age>24</age>
+		<firstname>Hrishikesh</firstname>
+		<lastname>valzalwar</lastname>
+		<technologies>
+			<skills>dockers</skills>
+			<skills>aws</skills>
+			<skills>kubernetes</skills>
+		</technologies>
+	</myinfo>
+</root>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <root>
+     <myinfo>
+         <age>6</age>
+         <firstname>shivani</firstname>
+         <lastname>herekar</lastname>
+         <technologies>
+             <skills>javascript</skills>
+             <skills>css</skills>
+             <skills>html</skills>
+         </technologies>
+     </myinfo>
+ </root>

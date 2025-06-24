@@ -1,0 +1,12 @@
+myinfo:
+  address:
+    city: pune
+    state: maharashtra
+  age: 24
+  firstname: Hrishikesh
+  lastname: valzalwar
+  technologies:
+    skills:
+    - dockers
+    - aws
+    - kubernetes
