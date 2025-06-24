@@ -1,0 +1,14 @@
+{
+    "myinfo": {
+        "age": 24,
+        "firstname": "Hrishikesh",
+        "lastname": "valzalwar",
+        "technologies": {
+            "skills": [
+                "dockers",
+                "aws",
+                "kubernetes"
+            ]
+        }
+    }
+}

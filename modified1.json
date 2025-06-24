@@ -1,0 +1,14 @@
+{
+    "myinfo": {
+        "age": 6,
+        "firstname": "shivani",
+        "lastname": "herekar",
+        "technologies": {
+            "skills": [
+                "javascript",
+                "css",
+                "html"
+            ]
+        }
+    }
+}
